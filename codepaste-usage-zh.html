@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodePaste 使用说明</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        background: #0f1115;
+        color: #e6e6e6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      h1, h2, h3 {
+        margin: 0 0 12px;
+        line-height: 1.2;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 28px;
+      }
+      h3 {
+        font-size: 16px;
+        margin-top: 18px;
+      }
+      p, li {
+        font-size: 15px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .meta {
+        margin: 8px 0 24px;
+        color: #b7bcc6;
+        font-size: 14px;
+      }
+      .card {
+        background: #171a21;
+        border: 1px solid #2a2f3a;
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: #23304a;
+        color: #9fd4ff;
+        margin-left: 6px;
+      }
+      a {
+        color: #9fd4ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          background: #f6f7fb;
+          color: #1c1f28;
+        }
+        .card {
+          background: #ffffff;
+          border-color: #e5e7ef;
+        }
+        .meta {
+          color: #5b6272;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CodePaste 使用说明</h1>
+      <div class="meta">
+        联系方式：<a href="mailto:yaogdu@gmail.com">yaogdu@gmail.com</a>
+      </div>
+
+      <div class="card">
+        <p>
+          CodePaste 是面向开发者的剪贴板历史与代码工具。复制后即可在应用中看到记录，
+          使用全局快捷键呼出悬浮窗，快速搜索并回贴到当前应用。
+        </p>
+      </div>
+
+      <h2>快速开始</h2>
+      <div class="card">
+        <ul>
+          <li>默认快捷键：<strong>⌘⇧V</strong> 呼出/隐藏悬浮窗，可在设置中修改。</li>
+          <li>直接输入关键词即可搜索历史记录（FTS 全文检索）。</li>
+          <li>方向键选择条目，按 <strong>Enter</strong> 回贴到当前应用。</li>
+          <li>按 <strong>Space</strong> 快速预览图片或文件。</li>
+        </ul>
+      </div>
+
+      <h2>快捷键</h2>
+      <div class="card">
+        <ul>
+          <li><strong>⌘⇧V</strong>：打开/关闭悬浮窗。</li>
+          <li><strong>⌘F</strong>：聚焦搜索框。</li>
+          <li><strong>Esc</strong>：搜索有内容时清空搜索；无内容时关闭悬浮窗。</li>
+          <li><strong>↑ / ↓</strong>：切换选中条目。</li>
+          <li><strong>Enter</strong>：粘贴选中条目。</li>
+          <li><strong>Space</strong>：预览图片/文件条目。</li>
+          <li><strong>⌘C</strong>：复制选中条目到剪贴板。</li>
+        </ul>
+      </div>
+
+      <h2>搜索与筛选</h2>
+      <div class="card">
+        <ul>
+          <li>顶部搜索框支持关键词搜索。</li>
+          <li>筛选按钮支持：全部、置顶、收藏、代码、文本、链接、文件、图片、颜色。</li>
+        </ul>
+      </div>
+
+      <h2>菜单栏（状态栏）</h2>
+      <div class="card">
+        <ul>
+          <li>显示剪贴板 / 隐藏剪贴板。</li>
+          <li>设置…</li>
+          <li>退出 CodePaste。</li>
+        </ul>
+      </div>
+
+      <h2>组织与管理</h2>
+      <div class="card">
+        <ul>
+          <li>置顶 / 收藏：常用内容快速固定。</li>
+          <li>标签：最多 3 个标签，用于快速检索。</li>
+          <li>多选：按住 <strong>⌘</strong> 点击可多选，按住 <strong>⇧</strong> 可连续选择。</li>
+        </ul>
+      </div>
+
+      <h2>右键菜单</h2>
+      <div class="card">
+        <ul>
+          <li>复制为纯文本 / 粘贴为纯文本。</li>
+          <li>复制为 Markdown <span class="badge">Pro</span></li>
+          <li>格式化代码 / 转换工具 <span class="badge">Pro</span></li>
+          <li>预览（图片/文件）。</li>
+          <li>在 IDE 中打开文件/项目（需授权） <span class="badge">Pro</span></li>
+          <li>在 Finder 中显示（文件/图片）。</li>
+          <li>复制颜色（HEX / RGB / SwiftUI）。</li>
+          <li>编辑内容、编辑标签、删除条目。</li>
+        </ul>
+      </div>
+
+      <h2>设置项</h2>
+      <div class="card">
+        <ul>
+          <li>修改全局快捷键与外观语言。</li>
+          <li>设置数据保留时长、清空全部历史或缓存文件。</li>
+          <li>选择粘贴目标与纯文本粘贴。</li>
+          <li>调整文件缓存上限 <span class="badge">Pro</span></li>
+        </ul>
+      </div>
+
+      <h2>Pro 功能</h2>
+      <div class="card">
+        <ul>
+          <li>iCloud 同步 <span class="badge">Pro</span></li>
+          <li>IDE 联动打开项目/文件 <span class="badge">Pro</span></li>
+          <li>代码格式化与转换工具集 <span class="badge">Pro</span></li>
+          <li>复制为 Markdown <span class="badge">Pro</span></li>
+          <li>文件缓存上限可调 <span class="badge">Pro</span></li>
+          <li>自定义黑名单 <span class="badge">Pro</span></li>
+        </ul>
+      </div>
+
+      <h2>实验室功能</h2>
+      <div class="card">
+        <ul>
+          <li>Apple Intelligence 摘要与语义搜索（可关闭，需兼容设备）。</li>
+        </ul>
+      </div>
+
+      <h2>权限说明</h2>
+      <div class="card">
+        <ul>
+          <li>辅助功能/输入监控：用于全局快捷键与获取当前应用上下文。</li>
+          <li>自动化：用于与 IDE 交互并打开文件/项目（需用户授权）。</li>
+          <li>文件访问授权：用于预览或打开用户选择的文件。</li>
+        </ul>
+      </div>
+
+      <h2>联系我们</h2>
+      <div class="card">
+        <p>如有任何问题，请通过邮箱联系：<a href="mailto:yaogdu@gmail.com">yaogdu@gmail.com</a></p>
+      </div>
+    </div>
+  </body>
+</html>

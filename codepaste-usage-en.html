@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodePaste User Guide</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        background: #0f1115;
+        color: #e6e6e6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      h1, h2, h3 {
+        margin: 0 0 12px;
+        line-height: 1.2;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 28px;
+      }
+      h3 {
+        font-size: 16px;
+        margin-top: 18px;
+      }
+      p, li {
+        font-size: 15px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .meta {
+        margin: 8px 0 24px;
+        color: #b7bcc6;
+        font-size: 14px;
+      }
+      .card {
+        background: #171a21;
+        border: 1px solid #2a2f3a;
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 16px 0;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: #23304a;
+        color: #9fd4ff;
+        margin-left: 6px;
+      }
+      a {
+        color: #9fd4ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          background: #f6f7fb;
+          color: #1c1f28;
+        }
+        .card {
+          background: #ffffff;
+          border-color: #e5e7ef;
+        }
+        .meta {
+          color: #5b6272;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CodePaste User Guide</h1>
+      <div class="meta">
+        Contact: <a href="mailto:yaogdu@gmail.com">yaogdu@gmail.com</a>
+      </div>
+
+      <div class="card">
+        <p>
+          CodePaste is a clipboard history and code utility for developers. Copy anything and it appears
+          in your history. Use the global hotkey to open the overlay, search, and paste into the active app.
+        </p>
+      </div>
+
+      <h2>Quick Start</h2>
+      <div class="card">
+        <ul>
+          <li>Default hotkey: <strong>⌘⇧V</strong> to show/hide the overlay (customizable in Settings).</li>
+          <li>Type in the search field to find items instantly (FTS full‑text search).</li>
+          <li>Use arrow keys to select, press <strong>Enter</strong> to paste.</li>
+          <li>Press <strong>Space</strong> to preview images or files.</li>
+        </ul>
+      </div>
+
+      <h2>Keyboard Shortcuts</h2>
+      <div class="card">
+        <ul>
+          <li><strong>⌘⇧V</strong>: Show/Hide the overlay.</li>
+          <li><strong>⌘F</strong>: Focus the search field.</li>
+          <li><strong>Esc</strong>: Clear search if not empty; otherwise close the overlay.</li>
+          <li><strong>↑ / ↓</strong>: Move selection.</li>
+          <li><strong>Enter</strong>: Paste selected item.</li>
+          <li><strong>Space</strong>: Preview image/file items.</li>
+          <li><strong>⌘C</strong>: Copy selected item to clipboard.</li>
+        </ul>
+      </div>
+
+      <h2>Search & Filters</h2>
+      <div class="card">
+        <ul>
+          <li>Search supports keywords across your clipboard history.</li>
+          <li>Filters include: All, Pinned, Favorites, Code, Text, Link, File, Image, Color.</li>
+        </ul>
+      </div>
+
+      <h2>Menu Bar</h2>
+      <div class="card">
+        <ul>
+          <li>Show Clipboard / Hide Clipboard.</li>
+          <li>Settings…</li>
+          <li>Quit CodePaste.</li>
+        </ul>
+      </div>
+
+      <h2>Organize</h2>
+      <div class="card">
+        <ul>
+          <li>Pin or favorite frequently used items.</li>
+          <li>Add up to 3 tags for quick retrieval.</li>
+          <li>Multi‑select with <strong>⌘</strong>, range‑select with <strong>⇧</strong>.</li>
+        </ul>
+      </div>
+
+      <h2>Context Menu</h2>
+      <div class="card">
+        <ul>
+          <li>Copy/Paste as Plain Text.</li>
+          <li>Copy as Markdown <span class="badge">Pro</span></li>
+          <li>Format Code / Transforms <span class="badge">Pro</span></li>
+          <li>Preview (images/files).</li>
+          <li>Open file/project in IDE (permission required) <span class="badge">Pro</span></li>
+          <li>Show in Finder (files/images).</li>
+          <li>Copy color values (HEX / RGB / SwiftUI).</li>
+          <li>Edit content, edit tags, or delete an item.</li>
+        </ul>
+      </div>
+
+      <h2>Settings</h2>
+      <div class="card">
+        <ul>
+          <li>Customize global hotkey and language.</li>
+          <li>Set retention period, clear history or cached files.</li>
+          <li>Choose paste destination and plain‑text paste.</li>
+          <li>Adjust file cache limit <span class="badge">Pro</span></li>
+        </ul>
+      </div>
+
+      <h2>Pro Features</h2>
+      <div class="card">
+        <ul>
+          <li>iCloud sync <span class="badge">Pro</span></li>
+          <li>IDE actions to open project/file <span class="badge">Pro</span></li>
+          <li>Code formatting & transforms <span class="badge">Pro</span></li>
+          <li>Copy as Markdown <span class="badge">Pro</span></li>
+          <li>Adjustable file cache limit <span class="badge">Pro</span></li>
+          <li>Custom blacklist <span class="badge">Pro</span></li>
+        </ul>
+      </div>
+
+      <h2>Labs</h2>
+      <div class="card">
+        <ul>
+          <li>Apple Intelligence summaries & semantic search (optional, supported devices only).</li>
+        </ul>
+      </div>
+
+      <h2>Permissions</h2>
+      <div class="card">
+        <ul>
+          <li>Accessibility/Input Monitoring: global hotkeys and active app context.</li>
+          <li>Automation: IDE integration to open files/projects (user approval required).</li>
+          <li>File access: preview or open files you select.</li>
+        </ul>
+      </div>
+
+      <h2>Contact</h2>
+      <div class="card">
+        <p>If you have any questions, email: <a href="mailto:yaogdu@gmail.com">yaogdu@gmail.com</a></p>
+      </div>
+    </div>
+  </body>
+</html>
